@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HUSH TECH Academy — build real cybersecurity skills, from your first command to advanced security practice.">
+  <title>HUSH TECH Academy | Learn. Defend. Build.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="HUSH TECH Academy home">
+      <span class="brand-mark brand-image"><img src="assets/hush-tech-logo.png" alt="HUSH TECH Academy logo"></span>
+      <span class="brand-name">HUSH TECH <small>ACADEMY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#courses">Courses</a>
+      <a href="#dashboard">Dashboard</a>
+          <a href="#labs">Practical Labs</a>
+          <a href="#account">Student Account</a>
+      <a href="#paths">Learning paths</a>
+      <a href="#about">About us</a>
+      <a class="nav-signin" href="#signin">Sign in <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> YOUR CYBERSECURITY JOURNEY STARTS HERE</div>
+        <h1>Think like a<br><span class="gradient-text">defender.</span><br>Build like a pro.</h1>
+        <p class="hero-lede">Master cybersecurity one skill at a time. Learn the tools, understand the threats, and build the confidence to protect what matters.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#join">Join the academy <span>↗</span></a>
+          <a class="button button-ghost" href="#courses"><span class="play-icon">▶</span> Explore courses</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>H</span><span>T</span><span>+</span></div>
+          <div><strong>Built for curious minds</strong><small>Start at zero. Grow with purpose.</small></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative cybersecurity terminal illustration">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="terminal-card">
+          <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>hush@academy:~</span><span class="terminal-lock">⌑ SECURE</span></div>
+          <div class="terminal-body">
+            <p class="terminal-muted"># your next chapter begins</p>
+            <p><b class="prompt">hush@academy</b><span class="terminal-symbol">:$</span> start-learning</p>
+            <p class="terminal-output">Initializing skill tree<span class="dots">...</span></p>
+            <div class="terminal-progress"><span></span></div>
+            <div class="terminal-check"><span>✓</span> Linux fundamentals <b>READY</b></div>
+            <div class="terminal-check"><span>✓</span> Network security <b>READY</b></div>
+            <div class="terminal-check terminal-next"><span>◌</span> Ethical hacking <b>UP NEXT</b></div>
+            <p class="terminal-final"><span class="prompt">ACCESS GRANTED</span><span class="cursor">_</span></p>
+          </div>
+        </div>
+        <div class="floating-chip chip-top"><span>✳</span> Learn by doing</div>
+        <div class="floating-chip chip-bottom"><span class="shield">⬡</span><div><b>Skills over shortcuts</b><small>Practice. Progress. Repeat.</small></div></div>
+        <div class="visual-cross cross-one">+</div><div class="visual-cross cross-two">+</div>
+      </div>
+    </section>
+
+    <section class="stats section-wrap" aria-label="Academy principles">
+      <div><strong>01<span>.</span></strong><p>Start with the basics</p></div>
+      <div><strong>02<span>.</span></strong><p>Practice in safe labs</p></div>
+      <div><strong>03<span>.</span></strong><p>Build real-world skills</p></div>
+      <div><strong>04<span>.</span></strong><p>Learn ethically, always</p></div>
+    </section>
+
+    <section class="courses-section section-wrap" id="courses">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE LEARNING LAB</div><h2>Skills that open doors<span class="accent">.</span></h2><p>Explore the foundations of cybersecurity and level up at your own pace.</p></div>
+        <a class="text-link" href="#paths">View learning paths <span>↗</span></a>
+      </div>
+      <div class="course-tools">
+        <label class="course-search-wrap" for="courseSearch"><span aria-hidden="true">⌕</span><input id="courseSearch" type="search" placeholder="Search courses..." aria-label="Search courses"></label>
+        <div class="course-filters" role="group" aria-label="Filter courses by level">
+          <button class="filter-button active" type="button" data-filter="all">All courses <span>10</span></button>
+          <button class="filter-button" type="button" data-filter="beginner">Beginner</button>
+          <button class="filter-button" type="button" data-filter="intermediate">Intermediate</button>
+          <button class="filter-button" type="button" data-filter="advanced">Advanced</button>
+        </div>
+      </div>
+      <div class="course-grid" id="courseGrid">
+        <article class="course-card" data-level="beginner" data-search="computer hardware software operating systems troubleshooting digital literacy">
+          <div class="course-top"><span class="course-icon icon-green">▣</span><span class="level">LEVEL 01 · BEGINNER</span></div>
+          <h3>Computer Fundamentals</h3><p>Understand computer hardware, software, operating systems, files, storage, and basic troubleshooting.</p>
+          <div class="course-meta"><span>◷ 5 modules</span><span>↗ Core skills</span></div>
+          <a href="#join" class="course-link" aria-label="Explore Computer Fundamentals">Explore course <span>↗</span></a>
+        </article>
+        <article class="course-card" data-level="beginner" data-search="ip addressing dns tcp udp osi model routers switches ports">
+          <div class="course-top"><span class="course-icon icon-purple">⌁</span><span class="level">LEVEL 01 · BEGINNER</span></div>
+          <h3>Networking Essentials</h3><p>Learn IP addressing, DNS, TCP/UDP, ports, network devices, and how data travels across networks.</p>
+          <div class="course-meta"><span>◷ 6 modules</span><span>↗ Core skills</span></div>
+          <a href="#join" class="course-link" aria-label="Explore Networking Essentials">Explore course <span>↗</span></a>
+        </article>
+        <article class="course-card" data-level="beginner" data-search="linux kali terminal command line files permissions users packages shell">
+          <div class="course-top"><span class="course-icon icon-green">⌘</span><span class="level">LEVEL 01 · BEGINNER</span></div>
+          <h3>Linux & Kali Linux</h3><p>Practice terminal commands, file permissions, users, package management, and Linux tools used in security labs.</p>
+          <div class="course-meta"><span>◷ 7 modules</span><span>↗ Lab practice</span></div>
+          <a href="#join" class="course-link" aria-label="Explore Linux & Kali Linux">Explore course <span>↗</span></a>
+        </article>
+        <article class="course-card" data-level="beginner" data-search="python programming variables loops functions lists dictionaries scripting automation">
+          <div class="course-top"><span class="course-icon icon-orange">Py</span><span class="level">LEVEL 01 · BEGINNER</span></div>
+          <h3>Python Programming</h3><p>Start coding with variables, conditions, loops, functions, data structures, and simple automation scripts.</p>
+          <div class="course-meta"><span>◷ 8 modules</span><span>↗ Code along</span></div>
+          <a href="#join" class="course-link" aria-label="Explore Python Programming">Explore course <span>↗</span></a>
+        </article>
+        <article class="course-card" data-level="beginner" data-search="cybersecurity fundamentals confidentiality integrity availability threats risk vulnerabilities authentication">
+          <div class="course-top"><span class="course-icon icon-blue">⬡</span><span class="level">LEVEL 01 · BEGINNER</span></div>
+          <h3>Cybersecurity Fundamentals</h3><p>Explore the CIA triad, common threats, risk, vulnerabilities, authentication, and security best practices.</p>
+          <div class="course-meta"><span>◷ 5 modules</span><span>↗ Core skills</span></div>
+          <a href="#join" class="course-link" aria-label="Explore Cybersecurity Fundamentals">Explore course <span>↗</span></a>
+        </article>
+        <article class="course-card" data-level="intermediate" data-search="web security http https cookies sessions access control input validation owasp">
+          <div class="course-top"><span class="course-icon icon-orange">⌑</span><span class="level">LEVEL 02 · INTERMEDIATE</span></div>
+          <h3>Web Security</h3><p>Understand HTTP, HTTPS, cookies, sessions, access control, input validation, and common web risks in safe labs.</p>
+          <div class="course-meta"><span>◷ 6 modules</span><span>↗ Safe labs</span></div>
+          <a href="#join" class="course-link" aria-label="Explore Web Security">Explore course <span>↗</span></a>
+        </article>
+        <article class="course-card" data-level="intermediate" data-search="ethical hacking penetration testing reconnaissance methodology scanning validation reporting authorization">
+          <div class="course-top"><span class="course-icon icon-purple">⌁</span><span class="level">LEVEL 02 · INTERMEDIATE</span></div>
+          <h3>Ethical Hacking</h3><p>Study authorized assessment methodology, reconnaissance, safe validation, documentation, and responsible reporting.</p>
+          <div class="course-meta"><span>◷ 8 modules</span><span>↗ Authorized labs</span></div>
+          <a href="#join" class="course-link" aria-label="Explore Ethical Hacking">Explore course <span>↗</span></a>
+        </article>
+        <article class="course-card" data-level="intermediate" data-search="digital forensics evidence collection chain custody file metadata timeline disk investigation">
+          <div class="course-top"><span class="course-icon icon-green">⌕</span><span class="level">LEVEL 02 · INTERMEDIATE</span></div>
+          <h3>Digital Forensics</h3><p>Learn evidence handling, chain of custody, file metadata, timelines, and the basics of digital investigations.</p>
+          <div class="course-meta"><span>◷ 6 modules</span><span>↗ Evidence skills</span></div>
+          <a href="#join" class="course-link" aria-label="Explore Digital Forensics">Explore course <span>↗</span></a>
+        </article>
+        <article class="course-card" data-level="advanced" data-search="security operations center soc incident response monitoring logs alerts triage containment recovery">
+          <div class="course-top"><span class="course-icon icon-blue">◉</span><span class="level">LEVEL 03 · ADVANCED</span></div>
+          <h3>Security Operations & Incident Response</h3><p>Practice log review, alert triage, incident handling, containment, recovery, and post-incident reporting.</p>
+          <div class="course-meta"><span>◷ 7 modules</span><span>↗ Blue team</span></div>
+          <a href="#join" class="course-link" aria-label="Explore Security Operations & Incident Response">Explore course <span>↗</span></a>
+        </article>
+        <article class="course-card" data-level="advanced" data-search="cloud security identity access management iam configuration data protection monitoring shared responsibility">
+          <div class="course-top"><span class="course-icon icon-purple">☁</span><span class="level">LEVEL 03 · ADVANCED</span></div>
+          <h3>Cloud Security</h3><p>Discover cloud identity and access management, secure configuration, data protection, monitoring, and shared responsibility.</p>
+          <div class="course-meta"><span>◷ 6 modules</span><span>↗ Cloud skills</span></div>
+          <a href="#join" class="course-link" aria-label="Explore Cloud Security">Explore course <span>↗</span></a>
+        </article>
+      </div>
+      <p class="course-empty" id="courseEmpty" hidden>No courses match your search. Try another keyword or filter.</p>
+      <p class="course-note"><span>✳</span> Every path is designed to build practical skills. Hands-on security testing must stay within systems you own or have explicit permission to assess.</p>
+    </section>
+
+    <section class="paths-section section-wrap" id="paths">
+      <div class="paths-copy"><div class="eyebrow">YOUR ROADMAP</div><h2>From first steps<br>to <span class="gradient-text">full potential.</span></h2><p>No guesswork. Follow a clear path, build strong fundamentals, and move forward when you're ready.</p><a href="#join" class="button button-primary">Find your path <span>↗</span></a></div>
+      <div class="path-list">
+        <article class="path-row"><span class="path-number">01</span><div class="path-main"><div><h3>Foundation</h3><p>Computer basics · Linux · Networking</p></div><span class="path-tag tag-green">BEGINNER</span></div><span class="path-arrow">↗</span></article>
+        <article class="path-row"><span class="path-number">02</span><div class="path-main"><div><h3>Security Explorer</h3><p>Web security · Python basics · Threats</p></div><span class="path-tag tag-purple">INTERMEDIATE</span></div><span class="path-arrow">↗</span></article>
+        <article class="path-row"><span class="path-number">03</span><div class="path-main"><div><h3>Security Practitioner</h3><p>Assessment · Detection · Reporting</p></div><span class="path-tag tag-orange">ADVANCED</span></div><span class="path-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="about-strip section-wrap" id="about"><div class="about-symbol">H<span>✳</span></div><div><div class="eyebrow">THE HUSH TECH MINDSET</div><h2>Curiosity is your first tool.</h2><p>We believe cybersecurity should be practical, accessible, and responsible. Learn the why, practice the how, and use your skills to make the digital world safer.</p></div><div class="about-stamp">LEARN<br><span>·</span> DEFEND<br><span>·</span> BUILD</div></section>
+
+
+    
+    <section class="section labs-section" id="labs">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow"><span class="status-dot"></span> LEARN BY DOING</span>
+          <h2>Practical <span class="text-accent">Labs.</span></h2>
+          <p class="section-copy">Build practical skills in controlled, authorized training environments. Start with the basics, practice safely, and track each challenge.</p></div>
+          <div class="labs-heading-tag"><span class="status-dot"></span> AUTHORIZED TRAINING ONLY</div>
+        </div>
+        <div class="labs-safety-banner"><span class="safety-icon">盾</span><div><strong>Practice safely. Learn responsibly.</strong><p>Use your own systems, dedicated training labs, or environments where you have explicit permission. These activities are designed for education and defense.</p></div></div>
+        <div class="labs-toolbar">
+          <label class="labs-search" for="labSearch"><span aria-hidden="true">⌕</span><input id="labSearch" type="search" placeholder="Search practical labs..." aria-label="Search practical labs"></label>
+          <div class="labs-filters" role="group" aria-label="Filter labs by difficulty">
+            <button class="lab-filter active" data-lab-filter="all" type="button" aria-pressed="true">All labs <span>6</span></button>
+            <button class="lab-filter" data-lab-filter="beginner" type="button" aria-pressed="false">Beginner</button>
+            <button class="lab-filter" data-lab-filter="intermediate" type="button" aria-pressed="false">Intermediate</button>
+          </div>
+        </div>
+        <div class="labs-grid" id="labsGrid">
+          <article class="lab-card" data-lab-level="beginner" data-lab-search="linux command line terminal navigation files permissions shell">
+            <div class="lab-card-top"><span class="lab-card-icon">⌘</span><span class="lab-level">BEGINNER</span></div><h3>Linux Command-Line Challenges</h3><p>Practice navigating directories, inspecting files, managing permissions, searching text, and using shell pipelines.</p><div class="lab-tags"><span>Linux</span><span>Terminal</span><span>5 tasks</span></div><div class="lab-card-bottom"><span class="lab-progress-label" data-lab-progress-label="linux">0 of 5 completed</span><button type="button" class="btn btn-secondary lab-start" data-start-lab="linux">Start lab ↗</button></div><div class="lab-task-panel" id="labTasks-linux" hidden></div>
+          </article>
+          <article class="lab-card" data-lab-level="beginner" data-lab-search="networking ip address dns tcp udp connectivity">
+            <div class="lab-card-top"><span class="lab-card-icon">⌁</span><span class="lab-level">BEGINNER</span></div><h3>Networking Exercises</h3><p>Explore IP addresses, DNS lookups, TCP/UDP concepts, and how to interpret basic connectivity results.</p><div class="lab-tags"><span>Networking</span><span>Protocols</span><span>4 tasks</span></div><div class="lab-card-bottom"><span class="lab-progress-label" data-lab-progress-label="network">0 of 4 completed</span><button type="button" class="btn btn-secondary lab-start" data-start-lab="network">Start lab ↗</button></div><div class="lab-task-panel" id="labTasks-network" hidden></div>
+          </article>
+          <article class="lab-card" data-lab-level="intermediate" data-lab-search="website web security http headers cookies sessions input validation">
+            <div class="lab-card-top"><span class="lab-card-icon">⌑</span><span class="lab-level">INTERMEDIATE</span></div><h3>Website Security Exercises</h3><p>Review HTTP security headers, cookie settings, session handling, and input-validation concepts in a training application.</p><div class="lab-tags"><span>Web security</span><span>Review</span><span>4 tasks</span></div><div class="lab-card-bottom"><span class="lab-progress-label" data-lab-progress-label="web">0 of 4 completed</span><button type="button" class="btn btn-secondary lab-start" data-start-lab="web">Start lab ↗</button></div><div class="lab-task-panel" id="labTasks-web" hidden></div>
+          </article>
+          <article class="lab-card" data-lab-level="intermediate" data-lab-search="log analysis authentication events failed logins timestamps incident">
+            <div class="lab-card-top"><span class="lab-card-icon">≋</span><span class="lab-level">INTERMEDIATE</span></div><h3>Log Analysis</h3><p>Read sample authentication and system logs, build a timeline, and distinguish routine events from suspicious patterns.</p><div class="lab-tags"><span>Blue team</span><span>Logs</span><span>5 tasks</span></div><div class="lab-card-bottom"><span class="lab-progress-label" data-lab-progress-label="logs">0 of 5 completed</span><button type="button" class="btn btn-secondary lab-start" data-start-lab="logs">Start lab ↗</button></div><div class="lab-task-panel" id="labTasks-logs" hidden></div>
+          </article>
+          <article class="lab-card" data-lab-level="intermediate" data-lab-search="defensive security hardening updates least privilege backups firewall incident response">
+            <div class="lab-card-top"><span class="lab-card-icon">◈</span><span class="lab-level">INTERMEDIATE</span></div><h3>Defensive Security Challenges</h3><p>Apply security hardening, least privilege, update planning, backup checks, and basic incident-response decisions.</p><div class="lab-tags"><span>Defense</span><span>Hardening</span><span>4 tasks</span></div><div class="lab-card-bottom"><span class="lab-progress-label" data-lab-progress-label="defense">0 of 4 completed</span><button type="button" class="btn btn-secondary lab-start" data-start-lab="defense">Start lab ↗</button></div><div class="lab-task-panel" id="labTasks-defense" hidden></div>
+          </article>
+          <article class="lab-card" data-lab-level="intermediate" data-lab-search="beginner penetration testing intentionally vulnerable lab application authorization scope reporting">
+            <div class="lab-card-top"><span class="lab-card-icon">⌬</span><span class="lab-level">INTERMEDIATE</span></div><h3>Beginner Penetration-Testing Lab</h3><p>Learn scope, application mapping, safe vulnerability validation, and reporting against intentionally vulnerable lab apps.</p><div class="lab-tags"><span>Ethical hacking</span><span>Sandbox only</span><span>4 tasks</span></div><div class="lab-card-bottom"><span class="lab-progress-label" data-lab-progress-label="pentest">0 of 4 completed</span><button type="button" class="btn btn-secondary lab-start" data-start-lab="pentest">Start lab ↗</button></div><div class="lab-task-panel" id="labTasks-pentest" hidden></div>
+          </article>
+        </div>
+        <p class="labs-empty" id="labsEmpty" hidden>No labs match your search. Try another keyword or difficulty filter.</p>
+        <div class="labs-footer-note"><span>ⓘ</span><p><strong>Training environment note:</strong> These are guided frontend checklists only. They do not run commands or test live systems. Real interactive labs should run in isolated, intentionally vulnerable environments with clear authorization and reset controls.</p></div>
+      </div>
+    </section>
+
+<section class="section-wrap student-dashboard" id="dashboard">
+      <div class="dashboard-head"><div><div class="eyebrow"><span class="status-dot"></span> STUDENT SPACE</div><h2>Your learning. <span class="gradient-text">Your progress.</span></h2><p>Track your courses, completed lessons, quiz results, practical labs, and certificates.</p></div><span class="dashboard-demo-tag">INTERACTIVE DEMO</span></div>
+      <div class="student-welcome"><div class="student-avatar" id="studentAvatar">S</div><div class="student-welcome-copy"><small>WELCOME BACK</small><h3 id="studentName">Alex Morgan</h3><p>Keep learning. Every completed lesson brings you closer to your goal.</p></div><a class="button button-primary" href="#courses">Browse courses ↗</a></div>
+      <div class="student-stats"><article><small>ENROLLED COURSES</small><strong id="dashEnrolled">3</strong><span>Active learning paths</span></article><article><small>LESSONS COMPLETED</small><strong id="dashLessons">8 <i>/ 32</i></strong><div class="dash-progress"><span id="dashLessonBar" style="width:25%"></span></div></article><article><small>AVERAGE QUIZ SCORE</small><strong id="dashQuizAvg">84< i>%</i></strong><span>Across sample quizzes</span></article><article><small>CERTIFICATES EARNED</small><strong id="dashCertCount">1</strong><span>Achievements</span></article></div>
+      <div class="dashboard-layout"><div class="dashboard-main-col"><article class="dash-panel"><div class="dash-panel-heading"><div><small>KEEP GOING</small><h3>My enrolled courses</h3></div><span class="dashboard-demo-tag" id="dashCourseCount">03 COURSES</span></div><div id="dashCourses" class="dash-course-list"></div></article><article class="dash-panel"><div class="dash-panel-heading"><div><small>PRACTICE & APPLY</small><h3>Practical lab progress</h3></div></div><div id="dashLabs" class="dash-list"></div></article></div>
+      <div class="dashboard-side-col"><article class="dash-panel"><div class="dash-panel-heading"><div><small>RECENT RESULTS</small><h3>Quiz scores</h3></div></div><div id="dashQuizzes" class="dash-list"></div></article><article class="dash-panel"><div class="dash-panel-heading"><div><small>MILESTONES</small><h3>Certificates</h3></div></div><div id="dashCertificates" class="dash-list"></div></article><div class="dash-disclaimer"><strong>Demo dashboard</strong><br>Sample progress is saved in this browser only. Real student accounts and synced progress require a secure backend and database.</div></div></div>
+      <div class="dashboard-bottom-actions"><button class="button button-ghost" id="dashReset" type="button">Reset sample progress</button><span>Use “Complete lesson +” to test progress tracking.</span></div>
+    </section>
+
+    <section class="join-section section-wrap" id="join">
+      <div class="join-box"><div class="join-grid"></div><div class="eyebrow"><span class="status-dot"></span> READY WHEN YOU ARE</div><h2>Your future in cyber<br>starts with <span class="gradient-text">one step.</span></h2><p>Start learning today. Your next skill is closer than you think.</p><div class="hero-actions"><a class="button button-primary" href="#signin">Join HUSH TECH <span>↗</span></a><a class="button button-ghost" href="#courses">Browse courses</a></div><span class="join-decoration">H/01</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home"><span class="brand-mark brand-image"><img src="assets/hush-tech-logo.png" alt="HUSH TECH Academy logo"></span><span class="brand-name">HUSH TECH <small>ACADEMY</small></span></a>
+    <p>Learn responsibly. Defend intelligently.</p><span class="footer-copy">© <span id="year"></span> HUSH TECH Academy</span>
+  
+    <section class="section account-section" id="account">
+      <div class="container account-container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow"><span class="status-dot"></span> YOUR LEARNING STARTS HERE</span>
+            <h2>Student <span class="text-accent">Account.</span></h2>
+            <p class="section-copy">Create a local demo account or sign in to view a personalized welcome. Your next step toward mastering cybersecurity starts here.</p>
+          </div>
+          <div class="labs-heading-tag"><span class="status-dot"></span> ACCOUNT DEMO</div>
+        </div>
+
+        <div class="account-layout">
+          <div class="account-promo">
+            <span class="account-symbol">⌁</span>
+            <p class="eyebrow">HUSH TECH ACADEMY</p>
+            <h3>Learn to protect<br><span class="text-accent">the digital world.</span></h3>
+            <p>Keep your learning journey organized, explore practical labs, and build your cybersecurity skills step by step.</p>
+            <div class="account-benefits">
+              <div><span>✓</span> Track your learning journey</div>
+              <div><span>✓</span> Explore hands-on lab checklists</div>
+              <div><span>✓</span> Prepare for future certificates</div>
+            </div>
+            <p class="account-warning">Accounts are handled by the academy server when this site is run with the backend. Use a unique password and keep your account secure.</p>
+          </div>
+
+          <div class="account-panel">
+            <div class="account-tabs" role="tablist" aria-label="Student account">
+              <button class="account-tab active" type="button" data-account-tab="register" role="tab" aria-selected="true">Create account</button>
+              <button class="account-tab" type="button" data-account-tab="login" role="tab" aria-selected="false">Sign in</button>
+            </div>
+
+            <div class="account-message" id="accountMessage" role="status" aria-live="polite" hidden></div>
+
+            <form id="registerForm" class="account-form" autocomplete="on">
+              <h3>Create your student account</h3>
+              <p class="account-subtitle">Join the HUSH TECH learning community.</p>
+              <label for="registerName">Full name</label>
+              <input id="registerName" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" placeholder="Enter your name" required>
+              <label for="registerEmail">Email address</label>
+              <input id="registerEmail" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required>
+              <label for="registerPassword">Demo password</label>
+              <input id="registerPassword" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="128" placeholder="At least 8 characters" required>
+              <p class="field-hint">For this frontend demo only. Never enter a password you use elsewhere.</p>
+              <button class="btn btn-primary account-submit" type="submit">Create demo account <span>↗</span></button>
+              <p class="account-legal">By continuing, you agree to use academy labs only in authorized environments.</p>
+            </form>
+
+            <form id="loginForm" class="account-form" autocomplete="on" hidden>
+              <h3>Welcome back</h3>
+              <p class="account-subtitle">Sign in to your HUSH TECH Academy account.</p>
+              <label for="loginEmail">Email address</label>
+              <input id="loginEmail" name="email" type="email" autocomplete="username" maxlength="254" placeholder="you@example.com" required>
+              <label for="loginPassword">Demo password</label>
+              <input id="loginPassword" name="password" type="password" autocomplete="current-password" maxlength="128" placeholder="Enter your demo password" required>
+              <button class="btn btn-primary account-submit" type="submit">Sign in <span>↗</span></button>
+              <p class="account-legal">Use a unique password. Never share your password with anyone.</p>
+            </form>
+
+            <div id="signedInPanel" class="signed-in-panel" hidden>
+              <div class="signed-in-icon">✓</div>
+              <p class="eyebrow">SIGNED IN ON THIS BROWSER</p>
+              <h3>Welcome, <span id="signedInName">Student</span>!</h3>
+              <p>Your demo account is ready. Continue learning with courses and practical lab checklists.</p>
+              <div class="signed-in-actions">
+                <a class="btn btn-primary" href="#dashboard">Open dashboard ↗</a>
+                <button class="btn btn-secondary" id="signOutButton" type="button">Sign out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</footer>
+
+  <dialog id="signin" class="signin-dialog">
+    <button class="dialog-close" id="closeDialog" aria-label="Close sign in">×</button>
+    <div class="brand-mark brand-image dialog-mark"><img src="assets/hush-tech-logo.png" alt="HUSH TECH Academy logo"></div>
+    <div class="eyebrow">WELCOME BACK</div><h2>Sign in to HUSH TECH</h2><p class="dialog-copy">This is a front-end demo. Account sign-in needs a secure backend.</p>
+    <form id="demoForm"><label for="email">Email address</label><input id="email" type="email" placeholder="you@example.com" required><label for="password">Password</label><input id="password" type="password" placeholder="Enter your password" required minlength="6"><button class="button button-primary form-submit" type="submit">Continue <span>↗</span></button><p class="form-message" id="formMessage" role="status"></p></form>
+  </dialog>
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
