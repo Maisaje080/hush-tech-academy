@@ -6,3 +6,5 @@ __pycache__/
 hush_tech.db
 hush_tech.db-shm
 hush_tech.db-wal
+
+app.py.backup

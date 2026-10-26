@@ -25,6 +25,9 @@ def init_db():
         c.execute('PRAGMA journal_mode=WAL')
         c.execute('''CREATE TABLE IF NOT EXISTS students(id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT NOT NULL,email TEXT NOT NULL UNIQUE COLLATE NOCASE,password_hash TEXT NOT NULL,created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)''')
         c.execute('''CREATE TABLE IF NOT EXISTS learning_progress(id INTEGER PRIMARY KEY AUTOINCREMENT,student_id INTEGER NOT NULL REFERENCES students(id) ON DELETE CASCADE,item_type TEXT NOT NULL,item_key TEXT NOT NULL,completed INTEGER NOT NULL DEFAULT 0 CHECK(completed IN (0,1)),updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,UNIQUE(student_id,item_type,item_key))''')
+
+init_db()
+
 def public_user(row): return {'id':row['id'],'name':row['name'],'email':row['email'],'created_at':row['created_at']}
 def current_student():
     sid=session.get('student_id')
